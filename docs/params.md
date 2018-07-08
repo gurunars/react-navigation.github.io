@@ -49,17 +49,17 @@ class DetailsScreen extends React.Component {
         <Button
           title="Go to Details... again"
           onPress={() =>
-            this.props.navigation.push('Details', {
+            navigation.push('Details', {
               itemId: Math.floor(Math.random() * 100),
             })}
         />
         <Button
           title="Go to Home"
-          onPress={() => this.props.navigation.navigate('Home')}
+          onPress={() => navigation.navigate('Home')}
         />
         <Button
           title="Go back"
-          onPress={() => this.props.navigation.goBack()}
+          onPress={() => navigation.goBack()}
         />
       </View>
     );
